@@ -1,0 +1,294 @@
+/* Reset CSS / Normalize */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --cor-de-fundo: #F5F5F5;
+    --cor-de-link: #000;
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+}
+
+ol, ul, li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--cor-de-link);
+}
+
+/* Sección Menu */
+.menu {
+    display: flex;
+    justify-content: space-between; /* Distribuye el espacio entre el header y la lista */
+    background-color: #F5F5F5;
+    padding: 10px 20px;
+    margin-bottom: 40px;
+}
+
+.menu__header {
+    display: flex;
+    align-items: center;
+}
+
+.menu__title {
+    margin-left: 10px;
+}
+
+.menu__list {
+    display: flex;
+    align-items: center;
+}
+
+.menu__list__item {
+    margin-right: 20px;
+}
+
+.menu__list__item__contato {
+    margin-left: 20px;
+}
+
+/* Sección Title */
+.title__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.title__bio {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.title__subsection {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.title__network {
+    display: flex;
+}
+
+.title__network__item {
+    margin-right: 20px;
+}
+
+.title__network__item a {
+    color: var(--cor-de-link);
+}
+
+.title__profile {
+    margin-left: auto; /* Mueve title__profile al lado derecho */
+}
+
+/* Sección About */
+.about__container {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    margin-top: 40px;
+}
+
+.about__title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.about__paragraph {
+    margin-bottom: 10px;
+}
+
+/* Sección Skills */
+.skills {
+    margin-top: 40px;
+}
+
+.skills__title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.skills__line {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skills__box {
+    flex: 0 0 50%;
+    padding: 10px;
+   
+}
+
+.skills__img {
+    width: 20px;
+}
+
+.skills__name {
+    margin-top: 10px;
+}
+
+/* Sección Hobbies */
+.hobbies {
+    margin-top: 40px;
+}
+
+.hobbies__title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.hobbies__line {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.hobbies__box {
+    flex: 0 0 50%;
+    padding: 10px;
+}
+
+.hobbies__img {
+    width: 50px;
+}
+
+.hobbies__name {
+    margin-top: 10px;
+}
+
+/* Sección Formación Académica */
+.academic {
+    margin-top: 40px;
+}
+
+.academic__title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.academic__courses__box {
+    flex: 0 0 50%;
+    padding: 10px;
+}
+
+.academic__courses__item__img {
+    width: 50px;
+}
+
+.academic__courses__item__title {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.academic__courses__item__subtitle {
+    margin-top: 5px;
+    color: #777;
+}
+
+/* Sección Experiencia Profesional */
+.experience {
+    margin-top: 40px;
+}
+
+.experience__section__title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.experience__box {
+    display: flex;
+    margin-bottom: 40px;
+}
+
+.experience__img {
+    width: 150px;
+    margin-right: 20px;
+    border-radius: 5px;
+}
+
+.experience__info {
+    flex: 1;
+}
+
+.experience__title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.experience__text {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    color: #777;
+}
+
+.experience__repo,
+.experience__demo {
+    margin-right: 10px;
+}
+
+.experience__repo a,
+.experience__demo a {
+    color: var(--cor-de-link);
+    font-weight: bold;
+}
+
+/* Sección Contacto */
+.formcontato {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.formcontato__title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.formcontato__subtext {
+    margin-bottom: 20px;
+    color: #777;
+}
+
+.formcontato__input,
+.formcontato__textarea {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.formcontato__botao {
+    padding: 10px;
+    background-color: var(--cor-de-link);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.formcontato__botao:hover {
+    background-color: var(--cor-de-fundo);
+}
